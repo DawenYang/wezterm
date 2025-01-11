@@ -17,7 +17,7 @@ if fs.platform().is_win then
         "RemoteSigned",
         "-NoProfileLoadTime",
       },
-      cwd = "~",
+      cwd = "C:\\Dev",
     },
     {
       label = Icons.Progs["pwsh.exe"] .. " PowerShell V5",
@@ -32,18 +32,14 @@ if fs.platform().is_win then
   Config.wsl_domains = {
     {
       name = "WSL:Ubuntu",
-      distribution = "Ubuntu",
-      username = "sravioli",
-      default_cwd = "~",
-      default_prog = { "bash", "-i", "-l" },
-    },
-    {
-      name = "WSL:Alpine",
-      distribution = "Alpine",
-      username = "sravioli",
-      default_cwd = "/home/sravioli",
-    },
+      distribution = "Ubuntu-22.04",
+      username = "dawen",
+      default_cwd = "~/dev",
+      default_prog = { "fish" },
+    }
   }
+
+  Config.default_domain = "WSL:Ubuntu"
 end
 
 Config.default_cwd = fs.home()
