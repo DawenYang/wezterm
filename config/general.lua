@@ -42,7 +42,10 @@ if fs.platform().is_win then
   Config.default_domain = "WSL:Ubuntu"
 end
 
-Config.default_cwd = fs.home()
+Config.default_cwd = "~/dev"
+
+-- Spawn a fish shell in login mode
+Config.default_prog = { '/usr/local/bin/fish', '-l' }
 
 -- ref: https://wezfurlong.org/wezterm/config/lua/SshDomain.html
 Config.ssh_domains = {}

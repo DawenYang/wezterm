@@ -1076,9 +1076,10 @@ end --~~}}}
 ---~~~
 M.color.get_scheme = function()
   if sfind((wt_gui and wt_gui.get_appearance() or ""), "Dark") then
-    return "kanagawa-wave"
+    return "kanagawa-dragon"
   end
-  return "kanagawa-lotus"
+  -- Ignore system light mode, return a dark schema always
+  return "kanagawa-dragon"
 end --~~}}}
 
 --~~ {{{2 M.color.set_tab_button(Config: table, theme: table)

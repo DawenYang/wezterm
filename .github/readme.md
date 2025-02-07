@@ -1,5 +1,5 @@
 # Wezterm config
-Forked from [sravioli/wezterm](https://github.com/sravioli/wezterm.git) with minor custimizations
+Forked from [sravioli/wezterm](https://github.com/sravioli/wezterm.git) with minor customizations
 
 ## Installation
 
@@ -8,12 +8,10 @@ Forked from [sravioli/wezterm](https://github.com/sravioli/wezterm.git) with min
 > Requirements:
 >
 > - [Wezterm _**nightly**_](https://wezfurlong.org/wezterm/installation.html)
-> - [Fira Code NerdFont](https://www.nerdfonts.com).
-> - [Monaspace Radon](https://github.com/githubnext/monaspace/releases/latest)
-> - [Monaspace Krypton](https://github.com/githubnext/monaspace/releases/latest)
+> - Primary font [CodeNewRoman Nerd Font](https://www.nerdfonts.com)
+> - Fallback font [Fira Code NerdFont](https://www.nerdfonts.com)
 
-
-1. **Clone the repo:**
+**Clone the repo:**
 
     ~~~sh
     # on Linux
@@ -24,6 +22,10 @@ Forked from [sravioli/wezterm](https://github.com/sravioli/wezterm.git) with min
     # on Windows
     git clone remote-path $env:HOME/.config/wezterm
     ~~~
+
+#### Default Scheme
+
+Set to `kanagawa-dragon` in `M.color.get_scheme` in [fn.lua](../utils/fn.lua)
 
 
 ## Features
