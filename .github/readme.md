@@ -1,6 +1,5 @@
-# My wezterm config
-
-![Configuration showcase](./imgs/showcase.png)
+# Wezterm config
+Forked from [sravioli/wezterm](https://github.com/sravioli/wezterm.git) with minor custimizations
 
 ## Installation
 
@@ -13,31 +12,19 @@
 > - [Monaspace Radon](https://github.com/githubnext/monaspace/releases/latest)
 > - [Monaspace Krypton](https://github.com/githubnext/monaspace/releases/latest)
 
-1. **Backup any old config**:
+
+1. **Clone the repo:**
 
     ~~~sh
     # on Linux
-    mv ~/.config/wezterm ~/.config/wezterm.bak
+    git clone remote-path ~/.config/wezterm
     ~~~
 
     ~~~powershell
     # on Windows
-    Move-Item $env:HOME/.config/wezterm $env:HOME/.config/wezterm.bak
+    git clone remote-path $env:HOME/.config/wezterm
     ~~~
 
-2. **Clone the repo:**
-
-    ~~~sh
-    # on Linux
-    git clone https://github.com/sravioli/wezterm.git ~/.config/wezterm
-    ~~~
-
-    ~~~powershell
-    # on Windows
-    git clone https://github.com/sravioli/wezterm.git $env:HOME/.config/wezterm
-    ~~~
-
-3. **Done** 🎉.
 
 ## Features
 
@@ -376,13 +363,3 @@ the previous mapping will be translated to:
 
 </details>
 <!--}}}-->
-
-## Thanks
-
-- [@Wez](https://www.github.com/wez) of course, for the awesome terminal.
-- [@apredezdc](https://github.com/aperezdc/) for it's implementation of [lua-wcwidth](https://github.com/aperezdc/lua-wcwidth).
-- [@KevinSilvester](https://github.com/KevinSilvester) for his GPU adapter auto picker.
-- [@twilsoft](https://github.com/twilsoft) inspired the modal prompts with their [wezmode](https://github.com/twilsoft/wezmode) project.
-- [@akthe-at](https://github.com/akthe-at) for his contributions to the project.
-
-<!-- vim: set fdm=marker fdl=1 -->
